@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="hsrandom">
+<head>
+  <title>HS PICKER!</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-contenteditable/angular-contenteditable.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/core.css">
+</head>
+<body>
+  <div id="app" ng-controller="main">
+    <div ng-if="loading">Loading...</div>
+    <div class="alert alert-danger" role="alert" ng-if="error">Please connect to a running server.</div>
+    <div ng-if="!error && !loading">
+      Updated {{obj.timeDiff || 0}} seconds ago.
+      <div><h1>Please enter player names</h1></div><br>
+      <div class="hero" id="left"><img ng-src="images/{{obj.p1}}.png"></img><p contenteditable="true" ng-model="obj.names.p1"> Player 1</p></div> 
+      <div class="hero" id="right"><img ng-src="images/{{obj.p2}}.png"></img><p contenteditable="true" ng-model="obj.names.p2"> Player 2</p></div>
+      <div><img src="images/endturn.png" ng-click="reroll();"></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+  background-color: #f5f5f5;
+  text-shadow: 0px 1px 1px #fff;
+  color: #222;
+  margin-top: 40px;
+  font-family: Helvetica, Arial;
+}
+#app {
+  margin: 20px 40px;
+}
+
+p {
+  text-align: center;
+  font-size: 2em;
+}
+
+div {
+    text-align: center;
+}
+
+.game {
+  height: 265px;
+}
+
+.game img {
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.viewers {
+  font-style: bold;
+  color: #aeaeae;
+}
+
+a {
+  margin-right: 10px;
+  float: left;
+}
+
+.number {
+  float: left;
+  font-size: 2em;
+  font-weight: bold;
+  color: #666;
+}
+
+#app {
+  width: 540px;
+  margin: 0 auto;
+}
+
+div.hero {
+  float: left;
+}
+
+div#left {
+  margin-right: 40px;
+}

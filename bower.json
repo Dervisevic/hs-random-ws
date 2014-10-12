@@ -1,0 +1,28 @@
+{
+  "name": "hs-random-ws",
+  "version": "0.1.0",
+  "authors": [
+    "Denis Dervisevic <echuu88@gmail.com>"
+  ],
+  "description": "App for picking 2 random classes in Hearthstone. Syncs to multiple clients via websockets to avoid cheating and verification.",
+  "main": "['js/app.js', 'index.html']",
+  "keywords": [
+    "hearthstone",
+    "node",
+    "websockets"
+  ],
+  "license": "MIT",
+  "homepage": "http://heynicebeard.com/hs/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "angular": "~1.2.26",
+    "angular-contenteditable": "~0.3.7"
+  }
+}
